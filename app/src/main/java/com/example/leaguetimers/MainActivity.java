@@ -23,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
                     return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
             }
             return false;
         }
@@ -39,6 +36,18 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+
+        int jgCamp = 150,
+                buffs = 300,
+                flash = 300,
+                heal = 240,
+                clarity = 240,
+                teleport = 360;
+
+
+        int[] timersSR = {buffs,buffs,jgCamp,jgCamp,jgCamp,jgCamp,jgCamp,jgCamp,jgCamp,jgCamp,jgCamp,jgCamp,};
+
     }
 
 }
